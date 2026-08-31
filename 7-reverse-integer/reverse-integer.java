@@ -5,11 +5,12 @@ class Solution {
        long sum=0;
        while(y!=0){
         r=y%10;
-        sum=(sum*10)+r;
+        sum=(10*sum)+r;
         y=y/10;
-       } 
-       if (sum > Integer.MAX_VALUE || sum < Integer.MIN_VALUE)
-            return 0;
+       }
+       if(sum> Integer.MAX_VALUE || sum < Integer.MIN_VALUE )
+       return 0;
+    
        return (int) sum;
     }
 }
